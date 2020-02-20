@@ -1,4 +1,137 @@
 JSON.parse()
 JSON.stringify()
 
+Vue.js를 활용한 웹 애플리케이션 개발 입문
+Vue.js 동작원리 & 학습방법
+
+
+[ 03 Vue.js 동작원리와 자가 학습 방법 ]
+
+Subjects
+1. Vue.js 동작 원리 알아보기
+2. Vue.js vs jQuery
+3. Vue.js와 프런트엔드 개발 학습 방법
+4. Vue.js 참고 자료
+
+__________
+
+01 Vue.js는 어떻게 동작할까
+
+__________
+
+
+Vue.js Reacrivity I
+
+MVVM 패턴에서의 Vue.js
+
+특정 속성에 반응성을 주입하는 코드
+Object.defineProperty(viewModel, 'model', {
+    get: function() {
+        // 'viewModel.model'를 접근할 때의 동작 정의
+    },
+    set: function() {
+        // 'viewModel.model'에 값을 할당할 때 동작 정의
+    }
+});
+
+__________
+
+Vue.js Reacrivity II
+
+화면을 다시 그리는 과정 > 뷰 인트턴스의 객체 속성
+
+__________
+
+Vue.js Template Compilation
+
+Vue.js 템플릿 코드 > render() 함수 > Dom 트리에 요소 추가
+
+__________
+
+Vue.js vs jQuery
+
+jQuery
+구분 : 자바 스크립트 라이브러리
+동작 원리 : 실제 DOM Tree에 접근하여 화면 요소를 추가, 삭제, 변경
+개발 생산성 : 렌더링 과정을 이해한 코딩 필요 기존 코드 복사 붙여넣기
+웹 성능 최적화 : 최신 웹 기술을 수용하기 위해 웹 자동화 도구 및 모듈 번들러를 별도로 구성해야함.
+
+Vue.js
+구분 : 점진적인 프레임워크 (From View Livradry to Framework)
+동작 원리 : 가상돔(Virture DOM)으로 화면 요소를 변경 및 조작하고 최종 결과물 DOM Tree에 반영
+개발 생산성 : 뷰 개발자 도구, 뷰 CLI 도구 지원 컴포넌트 기반 코드 재사용
+웹 성능 최적화 : 뷰 CLI도구에서 제공하는 프로젝트 템플릿으로 쉽게 기타 도구 사용 및 확장 가능
+
+__________
+
+03 Vue.js 와 프런트엔드 학습방법
+
+__________
+
+프론트엔드 Learning Path
+
+HTML5, CSS3, JS
++
+DOM(Document Object Model)
++
+chrome browser
++
+Vue.js
++
+NPM
++
+webpack
++
+ES 6 
++
+PWA / node / angular / react
+
+__________
+
+Vue.js Learning Path
+
+인스턴스
++
+컴포넌트
++
+컴포넌트 통신
++
+라우터
++
+HTTP 통신 라이브러리
++
+뷰 CLI 도구
++
+상태 관리
++
+Reacrivity, mixins, slots, render, ssr, plugins, hooks
+
+__________
+
+Vue.js 참고 자료
+
+학습 자료
+1. Vue.js 공식 문서
+2. Vue.js Developers
+3. Do it! Vue.js 입문
+
+( 추가 참고
+    1. mdn JavaScript
+    2. web fundermental(google)
+)
+
+강의 목록
+1. Age of Vue.js (한글)
+2. Vue.js 중급 강좌(한글)
+3. The Comlete Guide (영어)
+
+프로젝트 및 코드
+1. Awedome Vue 리포지토리
+2. Vue.js Enterprise Bolierplate
+3. Scotch Vue.js 튜토리얼
+
+통계 및 기타
+1. State of Vue.js
+2. Vue.js 팟캐스트
+3. Vue.js Mastery
 
